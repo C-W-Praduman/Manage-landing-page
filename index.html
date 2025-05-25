@@ -10,60 +10,71 @@
   <body>
 
       <header class="primary-header">
-        <div class="container">
+        <div class="container primary-header-div">
           <a href="#"><img src="public/images/logo.svg" alt="logo"></a>
-        <nav class="primary-navigation">
-
-          <ul role="list" class="nav-list">
+          
+        <nav >
+          <ul role="list" class="nav-list " id="primary-navigation">
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Product</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Community</a></li>
           </ul>
+          <button class="nav-button mobile-nav-toggle hidden">
+            <img class="icon-hamburger" src="public/images/icon-hamburger.svg" alt="">
+          </button>
         </nav>
-        <button class="button">Get Started</button>
+        <button class=" nav-btn button">Get Started</button>
         </div>
       </header>
       <main>
         <section class="padding-block-900">
-          <div class="container">
-            <div class="even-columns">
-              <div>
-                <h1 class="fs-primary-heading fw-bold ">Bring everyone together to build better products</h1>
+          <div class="container  ">
+            <div class="even-columns ">
+              <div >
+                <h1 class="fs-primary-heading fw-bold ">Bring everyone together to build better products.</h1>
 
-                <p class=" fw-regular">
+                <p class=" spacing fw-regular fs-600">
                   Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
                 </p>
-                <button class="button">Get Started</button>
+                <button class="spacing button">Get Started</button>
               </div>
               <div>
-                <img src="public/images/illustration-intro.svg" alt="">
+                <img class="main-section-img" src="public/images/illustration-intro.svg" alt="">
               </div>
             </div>
           </div>
         </section>
 
-        <section class="padding-block-900">
+        <section class="padding-block-700">
           <div class="container">
             <div class="even-columns">
               <div>
-                <h2 class="fs-secondary-heading fw-bold text-primary-400">what's different about Manage?</h2>
-                <p>
+                <h2 class="fs-secondary-heading fw-bold text-primary-400">What's different about Manage?</h2>
+                <p class="spacing">
                   Manage provides all the functionality your team needs, without the complexity. our software is tailor-made for modern digital product teams.
                 </p>
               </div>
-              <div>
+              <div class="padding-block-700">
                 <ul role="list" class="numbered-items">
-                  <li><h3 class="fs-600 fw-bold"><span> 01 </span>Track company-wide progress</h3>
-                  <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                  <div>  
+                    <li><h3 class="fs-600 fw-bold only-mobile"><span> 01 </span>Track company-wide progress</h3>
+                      <p class="s-space">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                    </div>
+                  </li>
+                  <div class="spacing">  
+                    <li>
+                      <h3 class="fs-600 fw-bold only-mobile"> <span> 02 </span>Advanced built-in reports</h3>
+                      <p class="s-space">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                    </div>
                 </li>
-                  <li><h3 class="fs-600 fw-bold"> <span> 02 </span>Advanced built-in reports</h3>
-                  <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-                </li>
-                  <li><h3 class="fs-600 fw-bold"><span>03</span> Everything you need in one place</h3>
-                  <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
-                </li>
+                <li>
+                    <div class="spacing">
+                    <h3 class="fs-600 fw-bold only-mobile"><span>03</span> Everything you need in one place</h3>
+                    <p class="s-space">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                  </div>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -71,7 +82,7 @@
         </section>
 
         <section class="courousel padding-block-700">
-          <h2 class="fs-secondary-heading fw-semi-bold text-primary-400">What they’ve said </h2>
+          <h2 class="fs-secondary-heading fw-bold text-primary-400">What they’ve said </h2>
           <!-- corousel here -->
 
           <button class="button">Get Started</button>
@@ -79,12 +90,12 @@
 
         <section class="cta | bg-accent-400 padding-block-700">
           <div class="container">
-           <div class="even-columns">
+           <div class="even-columns vertical-align-center">
             <div>
-               <p class="fs-secondary-heading fw-semi-bold text-accent-100 ">Simplify how your team works today.</p>
+               <p class="fs-secondary-heading fw-semi-bold text-accent-100 p-opacity-1">Simplify how your team  works today.</p>
             </div>
             <div>
-              <button class="button secondary-btn">Get Started</button>
+              <button class="button secondary-btn | btn-right">Get Started</button>
             </div>
            </div>
           </div>
