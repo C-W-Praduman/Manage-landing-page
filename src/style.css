@@ -15,6 +15,7 @@ html:focus-within{
 
 html,body{
   height: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -30,8 +31,8 @@ html,body{
   
   --ff-primary:"Be Vietnam Pro", sans-serif; 
 
-  --ff-body: var(var(--ff-primary));
-  --ff-heading: var(var(--ff-primary));
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
 
   --fw-regular:400;
   --fw-semi-bold:500;
@@ -144,7 +145,7 @@ html,body{
   display: none;
 }
  .nav-button{
-  background-color: none;
+  background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
@@ -205,7 +206,6 @@ html,body{
 
 body{
   font-family: var(--fs-body);
-  font-family: var(--ff-body);
   color: var(--color-primary400);
 }
 
@@ -237,7 +237,6 @@ body{
 /* button */
 
 .button{
-  display: flex;
   cursor: pointer;
   text-decoration: none;
   border-radius: 100vmax;
@@ -273,33 +272,91 @@ body{
 .cta{
   position: relative;
   isolation: isolate;
-  text-align: center;
 }
 
-.cta::before{
+.cta::after{
   content: "";
   position: absolute;
-  z-index: -1;
   inset: 0;
-  background-image: url("bg-tablet-pattern.svg"),url("bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position: -18rem -5rem, 70rem -42rem;
-  opacity:0.1;
+  background-image: url("bg-simplify-section-desktop.svg");
 }
 
 
+.footer-icons{
+ display: flex;
+ gap: var(--pad-400);
+ margin-top: var(--pad-900);
+}
 
+.footer-icons li a{
+  color: var(--color-accent400);
+}
 
+.footer-nav-links{
+  display: flex;
+  gap: var(--pad-900);
+}
 
+.footer-links li{
+  margin-top: var(--pad-300);
 
+}
+.footer-links li a{
+  color: var(--color-accent100);
+}
+.footer-links li a:hover,
+.footer-links li a:focus-visible{
+  color: var(--color-accent400);
+}
+.footer-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-form input{
+  border: none;
+  outline: none;
+  padding: var(--pad-300);
+  border-radius: 50px;
+  max-width: 55%;
+  flex: 1 1 0 ;
+  
+}
+.footer-form input:focus{
+   outline: 2px solid var(--color-accent400);
+}
 
+.footer-white-text{
+  color: var(--color-accent100);
+  margin-top: var(--pad-900);
+}
 
+/* extra absolutte images */
 
+.section-1
+{
+ position: relative;
+}
 
+.section-2
+{
+ position: relative;
+}
 
-
-
-
+.absolute-img{
+  position: absolute;
+  top: -305px;
+  right: -100px;
+  z-index: -1;
+  max-width: 100%;
+}
+.absolute-img-sec-2{
+  position: absolute;
+  bottom: -390px;
+  left: -500px;
+  z-index: -1;
+  max-width: 100%;
+}
 
 
 
@@ -354,8 +411,14 @@ body{
 @media(max-width:50em){
   .container{
   padding-inline:var(--pad-400);
-  }
   
+  }
+  p{
+    max-width: 100%;
+  }
+  div{
+    text-align: center;
+  }
   .only-mobile{
       background-color: var(--color-accent100);
       padding: var(--pad-300);
@@ -366,10 +429,12 @@ body{
 }
 
   :root{
-   --fs-primary-heading: var(var(--fs-900))
-   --fs-secondary-heading:var(var(--fs-800))
+   --fs-primary-heading: var(--fs-800);
+   --fs-secondary-heading:var(--fs-700);
   --fs-body: var(--fs-500);
   --fs-nav: var(--fs-300);
+  --fs-600: 0.875rem;
+
   }
  
   .nav-btn{
@@ -387,7 +452,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    max-width: 90%;
     margin-inline: auto;
     border-radius: var(--pad-200);
     transform: scaleY(0);
@@ -420,7 +485,50 @@ body{
   .btn-right{
   margin: auto;
 }
+.cta::after{
+  background-image: url("bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
 }
+.footer-form{
+  justify-content: center;
+  gap: var(--pad-200);
+  margin-top: var(--pad-300);
+
+}
+.footer-white-text{
+  
+  margin-top: var(--pad-500);
+}
+.footer-icons{
+  align-items: center;
+  justify-content: space-evenly;
+ margin-top: var(--pad-400);
+}
+.footer-nav-links{
+  align-items: center;
+  justify-content: center;
+
+}
+.absolute-img{
+  top: -100px;
+  right: -100px;
+}
+.absolute-img-sec-2{
+  top: -120px;
+  left: 150px;
+
+}
+ .even-columns {
+  display: grid;
+  grid-auto-flow: dense;
+}
+
+.even-columns > .first {
+  order: -1;
+}
+
+}
+
 
 @media(min-width:700px){
   

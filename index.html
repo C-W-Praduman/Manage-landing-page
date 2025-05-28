@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="public/images/favicon-32x32.png" />
     <link rel="stylesheet" href="src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Manage landing page</title>
   </head>
   <body>
 
@@ -29,25 +29,28 @@
         </div>
       </header>
       <main>
-        <section class="padding-block-900">
+        <section class="section-1 padding-block-900">
+          <img src="public/images/bg-tablet-pattern.svg" alt="" class="absolute-img">
           <div class="container  ">
-            <div class="even-columns ">
-              <div >
+            <div class="even-columns">
+              <div class="second">
                 <h1 class="fs-primary-heading fw-bold ">Bring everyone together to build better products.</h1>
 
                 <p class=" spacing fw-regular fs-600">
                   Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
                 </p>
                 <button class="spacing button">Get Started</button>
-              </div>
-              <div>
+              </div >
+              <div class="first">
                 <img class="main-section-img" src="public/images/illustration-intro.svg" alt="">
               </div>
             </div>
           </div>
         </section>
 
-        <section class="padding-block-700">
+        <section class="section-2 padding-block-700">
+          <img src="public/images/bg-tablet-pattern.svg" alt="" class="absolute-img-sec-2">
+
           <div class="container">
             <div class="even-columns">
               <div>
@@ -94,8 +97,8 @@
             <div>
                <p class="fs-secondary-heading fw-semi-bold text-accent-100 p-opacity-1">Simplify how your team  works today.</p>
             </div>
-            <div>
-              <button class="button secondary-btn | btn-right">Get Started</button>
+            <div class="btn-right">
+              <button class="button secondary-btn">Get Started</button>
             </div>
            </div>
           </div>
@@ -105,10 +108,10 @@
       <footer class=" padding-block-700 bg-neutral-900 text-neutral-100">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div >
               <a href="#"><img src="public/images/logo.svg" alt="logo"></a>
 
-              <ul role="list" area-label="social-icons">
+              <ul class="footer-icons" role="list" area-label="social-icons">
                 <li><a area-label="facebook" href="#"><img src="public/images/icon-facebook.svg" alt=""></a></li>
                 <li><a area-label="youtube" href="#"><img src="public/images/icon-youtube.svg" alt=""></a></li>
                 <li><a area-label="X" href="#"><img src="public/images/icon-twitter.svg" alt=""></a></li>
@@ -116,15 +119,17 @@
                 <li><a area-label="instagram" href="#"><img src="public/images/icon-instagram.svg" alt=""></a></li>
               </ul>
             </div>
-            <div>
+            <div class="footer-nav-links">
              <nav class="footer-nav">
-
-              <ul area-label="footer" role="list">
-
+              <ul class="footer-links" area-label="footer" role="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About Us</a></li>
+              </ul>
+             </nav>
+             <nav class="footer-nav">
+              <ul class="footer-links" area-label="footer" role="list">
                 <li><a href="#">Creer</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -132,13 +137,14 @@
              </nav>
             </div>
             <div>
-              <form action="">
+              <form class="footer-form" action="">
 
                 <input type="email" placeholder="Updates in your inbox...">
                 <button class="button">Go</button>
 
-                <p>Copyright 2020. All Rights Reserved</p>
               </form>
+                <p class="footer-white-text">Copyright 2020. All Rights Reserved</p>
+
             </div>
           </div>
         </div>
