@@ -34,10 +34,10 @@ Users should be able to:
 
 ### 🖼️ Screenshot
 
-![Project Screenshot](Screenshot1.jpg)
-![Project Screenshot](Screenshot2.jpg)
-![Project Screenshot](Screenshot3.jpg)
-![Project Screenshot](Screenshot4.jpg)
+![Project Screenshot](src/Screenshot1.jpg)
+![Project Screenshot](src/Screenshot2.jpg)
+![Project Screenshot](src/Screenshot3.jpg)
+![Project Screenshot](src/Screenshot4.jpg)
 
 ---
 ### 🔗 Links
