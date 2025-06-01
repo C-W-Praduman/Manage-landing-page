@@ -1,20 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="public/images/favicon-32x32.png" />
-    <link rel="stylesheet" href="src/style.css">
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="public/images/favicon-32x32.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manage landing page</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--my css-->
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <header class="primary-header">
+      <div class="container primary-header-div">
+        <a href="#"><img src="public/images/logo.svg" alt="logo" /></a>
 
-      <header class="primary-header">
-        <div class="container primary-header-div">
-          <a href="#"><img src="public/images/logo.svg" alt="logo"></a>
-          
-        <nav >
-          <ul role="list" class="nav-list " id="primary-navigation">
+        <nav>
+          <ul role="list" class="nav-list" id="primary-navigation">
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Product</a></li>
             <li><a href="#">About Us</a></li>
@@ -22,143 +32,264 @@
             <li><a href="#">Community</a></li>
           </ul>
           <button class="nav-button mobile-nav-toggle hidden">
-            <img class="icon-hamburger" src="public/images/icon-hamburger.svg" alt="">
+            <img
+              class="icon-hamburger"
+              src="public/images/icon-hamburger.svg"
+              alt=""
+            />
           </button>
         </nav>
-        <button class=" nav-btn button">Get Started</button>
-        </div>
-      </header>
-      <main>
-        <section class="section-1 padding-block-900">
-          <img src="public/images/bg-tablet-pattern.svg" alt="" class="absolute-img">
-          <div class="container  ">
-            <div class="even-columns">
-              <div class="second">
-                <h1 class="fs-primary-heading fw-bold ">Bring everyone together to build better products.</h1>
+        <button class="nav-btn button">Get Started</button>
+      </div>
+    </header>
+    <main>
+      <section class="section-1 padding-block-900">
+        <img
+          src="public/images/bg-tablet-pattern.svg"
+          alt=""
+          class="absolute-img"
+        />
+        <div class="container">
+          <div class="even-columns">
+            <div class="second">
+              <h1 class="fs-primary-heading fw-bold">
+                Bring everyone together to build better products.
+              </h1>
 
-                <p class=" spacing fw-regular fs-600">
-                  Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
-                </p>
-                <button class="spacing button">Get Started</button>
-              </div >
-              <div class="first">
-                <img class="main-section-img" src="public/images/illustration-intro.svg" alt="">
-              </div>
+              <p class="spacing fw-regular fs-600">
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
+              <button class="spacing button">Get Started</button>
+            </div>
+            <div class="first">
+              <img
+                class="main-section-img"
+                src="public/images/illustration-intro.svg"
+                alt=""
+              />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section-2 padding-block-700">
-          <img src="public/images/bg-tablet-pattern.svg" alt="" class="absolute-img-sec-2">
+      <section class="section-2 padding-block-700">
+        <img
+          src="public/images/bg-tablet-pattern.svg"
+          alt=""
+          class="absolute-img-sec-2"
+        />
 
-          <div class="container">
-            <div class="even-columns">
-              <div>
-                <h2 class="fs-secondary-heading fw-bold text-primary-400">What's different about Manage?</h2>
-                <p class="spacing">
-                  Manage provides all the functionality your team needs, without the complexity. our software is tailor-made for modern digital product teams.
-                </p>
-              </div>
-              <div class="padding-block-700">
-                <ul role="list" class="numbered-items">
-                  <div>  
-                    <li><h3 class="fs-600 fw-bold only-mobile"><span> 01 </span>Track company-wide progress</h3>
-                      <p class="s-space">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
-                    </div>
-                  </li>
-                  <div class="spacing">  
-                    <li>
-                      <h3 class="fs-600 fw-bold only-mobile"> <span> 02 </span>Advanced built-in reports</h3>
-                      <p class="s-space">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-                    </div>
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <h2 class="fs-secondary-heading fw-bold text-primary-400">
+                What's different about Manage?
+              </h2>
+              <p class="spacing">
+                Manage provides all the functionality your team needs, without
+                the complexity. our software is tailor-made for modern digital
+                product teams.
+              </p>
+            </div>
+            <div class="padding-block-700">
+              <ul role="list" class="numbered-items">
+                <li>
+                  <div>
+                      <h3 class="fs-600 fw-bold only-mobile">
+                        <span> 01 </span>Track company-wide progress
+                      </h3>
+                      <p class="s-space">
+                        See how your day-to-day tasks fit into the wider vision.
+                        Go from tracking progress at the milestone level all the
+                        way done to the smallest of details. Never lose sight of
+                        the bigger picture again.
+                      </p>
+                  </div>
                 </li>
                 <li>
-                    <div class="spacing">
-                    <h3 class="fs-600 fw-bold only-mobile"><span>03</span> Everything you need in one place</h3>
-                    <p class="s-space">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                  <div class="spacing">
+                    <h3 class="fs-600 fw-bold only-mobile">
+                      <span> 02 </span>Advanced built-in reports
+                    </h3>
+                    <p class="s-space">
+                      Set internal delivery estimates and track progress toward
+                      company goals. Our customisable dashboard helps you build
+                      out the reports you need to keep key stakeholders
+                      informed.
+                    </p>
                   </div>
-                  </li>
-                </ul>
+                </li>
+                <li>
+                  <div class="spacing">
+                    <h3 class="fs-600 fw-bold only-mobile">
+                      <span>03</span> Everything you need in one place
+                    </h3>
+                    <p class="s-space">
+                      Stop jumping from one service to another to communicate,
+                      store files, track tasks and share documents. Manage
+                      offers an all-in-one team productivity solution.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="courousel padding-block-700">
+        <h2 class="fs-secondary-heading fw-bold text-primary-400">
+          What they’ve said
+        </h2>
+
+        <section class="testimonial-section">
+          <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+              <!-- Testimonial 1 -->
+              <div class="swiper-slide testimonial-card">
+                <img
+                  src="public/images/avatar-anisha.png"
+                  alt="Anisha Li"
+                  class="testimonial-img"
+                />
+                <h3 class="testimonial-name">Anisha Li</h3>
+                <p class="testimonial-quote">
+                  “We have been able to cancel so many other subscriptions since
+                  using Manage. There is no more cross-channel confusion and
+                  everyone is much more focused.”
+                </p>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="swiper-slide testimonial-card">
+                <img
+                  src="public/images/avatar-ali.png"
+                  alt="Ali Bravo"
+                  class="testimonial-img"
+                />
+                <h3 class="testimonial-name">Ali Bravo</h3>
+                <p class="testimonial-quote">
+                  “Manage has completely changed how we communicate. Our
+                  productivity has soared since we started using it.”
+                </p>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="swiper-slide testimonial-card">
+                <img
+                  src="public/images/avatar-richard.png"
+                  alt="Richards Watt"
+                  class="testimonial-img"
+                />
+                <h3 class="testimonial-name">Richards Watt</h3>
+                <p class="testimonial-quote">
+                  “Thanks to Manage, our team collaboration is seamless and
+                  stress-free. It's a total game-changer for remote teams.”
+                </p>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="swiper-slide testimonial-card">
+                <img
+                  src="public/images/avatar-shanai.png"
+                  alt="Shanai Ju"
+                  class="testimonial-img"
+                />
+                <h3 class="testimonial-name">Shanai Ju</h3>
+                <p class="testimonial-quote">
+                  “No more confusion, no more chaos. Manage brought clarity and
+                  efficiency to our workflow.”
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="courousel padding-block-700">
-          <h2 class="fs-secondary-heading fw-bold text-primary-400">What they’ve said </h2>
-          <!-- corousel here -->
+        <button class="button">Get Started</button>
+      </section>
 
-          <button class="button">Get Started</button>
-        </section>
-
-        <section class="cta | bg-accent-400 padding-block-700">
-          <div class="container">
-           <div class="even-columns vertical-align-center">
+      <section class="cta | bg-accent-400 padding-block-700">
+        <div class="container">
+          <div class="even-columns vertical-align-center">
             <div>
-               <p class="fs-secondary-heading fw-semi-bold text-accent-100 p-opacity-1">Simplify how your team  works today.</p>
+              <p
+                class="fs-secondary-heading fw-semi-bold text-accent-100 p-opacity-1"
+              >
+                Simplify how your team works today.
+              </p>
             </div>
             <div class="btn-right">
               <button class="button secondary-btn">Get Started</button>
             </div>
-           </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class=" padding-block-700 bg-neutral-900 text-neutral-100">
-        <div class="container">
-          <div class="even-columns">
-            <div >
-              <a href="#"><img src="public/images/logo.svg" alt="logo"></a>
+    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#"><img src="public/images/logo.svg" alt="logo" /></a>
 
-              <ul class="footer-icons" role="list" area-label="social-icons">
-                <li><a area-label="facebook" href="#"><img src="public/images/icon-facebook.svg" alt=""></a></li>
-                <li><a area-label="youtube" href="#"><img src="public/images/icon-youtube.svg" alt=""></a></li>
-                <li><a area-label="X" href="#"><img src="public/images/icon-twitter.svg" alt=""></a></li>
-                <li><a area-label="pinterest" href="#"><img src="public/images/icon-pinterest.svg" alt=""></a></li>
-                <li><a area-label="instagram" href="#"><img src="public/images/icon-instagram.svg" alt=""></a></li>
-              </ul>
-            </div>
-            <div class="footer-nav-links">
-             <nav class="footer-nav">
+            <ul class="footer-icons" role="list" area-label="social-icons">
+              <li>
+                <a area-label="facebook" href="#"
+                  ><img src="public/images/icon-facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a area-label="youtube" href="#"
+                  ><img src="public/images/icon-youtube.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a area-label="X" href="#"
+                  ><img src="public/images/icon-twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a area-label="pinterest" href="#"
+                  ><img src="public/images/icon-pinterest.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a area-label="instagram" href="#"
+                  ><img src="public/images/icon-instagram.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-links">
+            <nav class="footer-nav">
               <ul class="footer-links" area-label="footer" role="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About Us</a></li>
               </ul>
-             </nav>
-             <nav class="footer-nav">
+            </nav>
+            <nav class="footer-nav">
               <ul class="footer-links" area-label="footer" role="list">
                 <li><a href="#">Creer</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Privacy Policy</a></li>
               </ul>
-             </nav>
-            </div>
-            <div>
-              <form class="footer-form" action="">
-
-                <input type="email" placeholder="Updates in your inbox...">
-                <button class="button">Go</button>
-
-              </form>
-                <p class="footer-white-text">Copyright 2020. All Rights Reserved</p>
-
-            </div>
+            </nav>
+          </div>
+          <div>
+            <form class="footer-form" action="">
+              <input type="email" placeholder="Updates in your inbox..." />
+              <button class="button">Go</button>
+            </form>
+            <p class="footer-white-text">Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-      
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
