@@ -13,10 +13,10 @@ const handleToggle = () => {
     primaryNavigation.classList.toggle("open");
     if (flag) {
         
-        iconHamburger.src = "public/images/icon-close.svg"
+        iconHamburger.src = "images/icon-close.svg"
         flag = false
     } else {
-        iconHamburger.src = "public/images/icon-hamburger.svg"
+        iconHamburger.src = "images/icon-hamburger.svg"
         flag = true
     }
 }
