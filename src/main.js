@@ -11,8 +11,8 @@ let flag = true;
 const handleToggle = () => {
 
     primaryNavigation.classList.toggle("open");
-
     if (flag) {
+        
         iconHamburger.src = "public/images/icon-close.svg"
         flag = false
     } else {

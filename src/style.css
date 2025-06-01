@@ -504,7 +504,6 @@ body{
   --fs-600: 0.875rem;
 
   }
- 
   .nav-btn{
     display: none;
   }
@@ -536,7 +535,6 @@ body{
   pointer-events: auto;
     box-shadow: 0 10px 10px 1000vmax rgba(0, 0, 0, 0.4);
     z-index: 10;
-
 }
   .nav-list li{
     margin-block: var(--pad-500);
