@@ -42,8 +42,8 @@ Users should be able to:
 ---
 ### 🔗 Links
 
-- Solution URL: [GitHub Repository](https://github.com/yourusername/fem-manage-landing-page)
-- Live Site URL: [Live Demo](https://your-live-site-url.netlify.app)
+- Solution URL: [GitHub Repository](https://github.com/C-W-Praduman/Manage-landing-page/)
+- Live Site URL: [Live Demo](https://manage-landing-page-rho-seven.vercel.app/)
 
 ---
 
